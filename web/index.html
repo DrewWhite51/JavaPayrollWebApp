@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Login Page</title>
+        <style>
+            body {background-color: #e9ecef;}
+            h1   {text-align: center;
+                  padding-top: 20px;
+            }
+            table {border: 4px solid black;}
+            
+            .button {
+                background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+                border: 0;
+                border-radius: 12px;
+                color: #FFFFFF;
+                cursor: pointer;
+                display: inline-block;
+                font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 2.5;
+                outline: transparent;
+                padding: 0 1rem;
+                text-align: center;
+                text-decoration: none;
+                transition: box-shadow .2s ease-in-out;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                white-space: nowrap;}
+              
+
+            .button:not([disabled]):focus {
+                box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);}
+
+            .button:not([disabled]):hover {
+                box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);}
+            
+        </style>
+    </head>
+    <body>
+        <h1>
+            RDD Development Company Login
+        </h1>
+        
+        <form action="login" method='post'>
+            
+            <input type="hidden">  
+            <table align="center" cellpadding="6">
+                
+                <tr>
+                    <td>
+                        <b>User-ID</b>
+                        <input type="text" name="userID" size="35" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <b>Password</b>
+                        <input type="Password" name="password" size="35">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="form.html">
+                            <input class="button" type="submit" value="LOGIN">
+                        </a>
+                    </td>
+                </tr>
+         
+                
+            </table>
+        </form>
+
+    </body>
+</html>

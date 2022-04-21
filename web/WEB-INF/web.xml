@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <servlet>
+        <servlet-name>firstServlet</servlet-name>
+        <servlet-class>Servlets.LoginProcessor</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>firstServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>timeCardServlet</servlet-name>
+        <servlet-class>Servlets.TimecardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>timeCardServlet</servlet-name>
+        <url-pattern>/timecard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>payrollServlet</servlet-name>
+        <servlet-class>Servlets.CalculatePayroll</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payrollServlet</servlet-name>
+        <url-pattern>/payroll</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+        
+    <servlet>
+        <servlet-name>errorHandler</servlet-name>
+        <servlet-class>Servlets.ErrorHandler</servlet-class>
+    </servlet>
+    <!-- servlet mappings -->
+    <servlet-mapping>
+       <servlet-name>errorHandler</servlet-name>
+       <url-pattern>/ErrorHandler</url-pattern>
+    </servlet-mapping>
+    
+    <error-page>
+       <error-code>404</error-code>
+       <location>/ErrorHandler</location>
+    </error-page>
+
+    <error-page>
+       <exception-type>java.lang.Throwable</exception-type >
+       <location>/ErrorHandler</location>
+    </error-page>
+    
+    
+   
+
+</web-app>
